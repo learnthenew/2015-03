@@ -6,4 +6,4 @@ Prénom Nom : ________ ________
 
 # Infos
 
-Consignes : soon on http://learn.thenew.fr/shinjo/board/
+Consignes : http://learn.thenew.fr/ex/2015-03.html
