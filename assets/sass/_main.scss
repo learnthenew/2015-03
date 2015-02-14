@@ -1,0 +1,25 @@
+// first, reset and utils from compass
+@import "compass/reset";
+@import "compass/css3";
+
+// screen sizes
+$break-small: 600px;
+$break-medium: 980px;
+
+// header and footer, as usual ...
+@import "header";
+@import "footer";
+
+body #wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: 'Corbel';
+    font-size: 16px;
+    line-height: 22px;
+    .clean {
+        clear: both;
+    }
+    img {
+        max-width: 100%;
+    }
+}

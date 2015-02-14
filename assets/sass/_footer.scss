@@ -1,0 +1,14 @@
+body #wrap footer {
+    margin-top: 100px;
+    padding-top: 3px;
+    background-color: #74ffa3;
+    div {
+        height: 6px;
+        &:first-child {
+            background-color: #072a42;
+        }
+        &:last-child {
+            background-color: #000;
+        }
+    }
+}

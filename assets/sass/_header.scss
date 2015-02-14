@@ -1,0 +1,63 @@
+body #wrap header {
+    padding: 25px 40px;
+    background-color: #045750;
+    h1 {
+        font-family: 'Georgia', serif;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: underline;
+        color: #74ffa3;
+    }
+    nav {
+        a:link, a:visited, a:focus, a:hover {
+            font-family: 'Corbel', sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+
+    @media screen and (min-width: $break-small) {
+        h1 {
+            font-size: 46px;
+            display: inline-block;
+            width: 10%;
+        }
+        nav {
+            display: inline-block;
+            width: 90%;
+            text-align: right;
+            a {
+                &:not(:first-child) {
+                    margin-left: 30px;
+                }
+                &:link, &:visited, &:focus, &:hover {
+                    font-family: 'Corbel', sans-serif;
+                    font-size: 36px;
+                    font-weight: bold;
+                    font-style: normal;
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $break-medium) and (min-width: $break-small) {
+        & {
+            padding: 20px;
+            nav {
+                a {
+                    &:not(:first-child) {
+                        margin-left: 10px;
+                    }
+                    &:link, &:visited, &:focus, &:hover {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
