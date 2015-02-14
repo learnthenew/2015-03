@@ -1,4 +1,6 @@
 body #wrap footer {
+    position: relative;
+    z-index: $default-zindex;
     margin-top: 100px;
     padding-top: 3px;
     background-color: #74ffa3;
