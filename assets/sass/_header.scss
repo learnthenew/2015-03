@@ -1,0 +1,100 @@
+.header
+{
+	background-color: #072a42;
+	height: 94px;
+	line-height: 94px;
+	border-bottom: 1px solid #fff;
+	padding: 0 40px;
+	@include box-sizing(border-box);
+	overflow: hidden;
+
+	.logo
+	{
+		text-decoration: underline;
+		font-style: italic;
+		font-size: 46px;
+		color: #74ffa3;
+		letter-spacing: 5px;
+	}
+
+	.nav
+	{
+		float: right;
+
+		ul li
+		{
+			display: inline-block;
+			margin: 0 10px;
+			font-size: 36px;
+			color: #fff;
+		}
+
+		// mobile version
+		.icon-menu
+		{
+			display: none;
+		}
+	}
+}
+
+// medium screen
+@media screen and (max-width: $mediumWidth)
+{
+	.header
+	{
+		border-bottom: none;
+		padding: 0 20px;
+
+		.logo
+		{
+			font-size: 44px;
+		}
+
+		li
+		{
+			font-size: 33px;
+		}
+	}
+}
+
+// icon menu form medium screen : menu is too big
+// also for mobile screen
+@media screen  and (max-width: 870px)
+{
+	.header
+	{
+		.nav
+		{
+			ul
+			{
+				display: none;
+			}
+
+			.icon-menu
+			{
+				display: inline-block;
+				font-size: 40px;
+				color: #fff;
+				vertical-align: middle;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+// small screen
+@media screen and (max-width: $smallWidth)
+{
+	.header
+	{
+		height: 60px;
+		line-height: 60px;
+		padding: 0 60px;
+
+		.logo
+		{
+			font-size: 34px;
+		}
+	}
+
+}

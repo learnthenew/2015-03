@@ -1,0 +1,120 @@
+/* --------------------------
+		FONTS
+----------------------------*/
+@font-face {
+    font-family: 'georgiaBold';
+    src: url('../fonts/georgiaBold/Georgia Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'corbel';
+    src: url('../fonts/corbel/corbel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'corbel-bold';
+    src: url('../fonts/corbel/corbelb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.georgiaBold
+{
+	font-family: 'georgiaBold', Arial, Serif;
+}
+
+.corbel
+{
+	font-family: 'corbel', Arial, Serif;
+}
+
+.corbelBold
+{
+	font-family: 'corbel-bold', Arial, Serif;
+}
+
+
+/* --------------------------
+		COMMONS CLASS
+----------------------------*/
+html,body {
+    height:100%;
+}
+
+.page
+{
+    background: #fff;
+    position: relative;
+    left: 0;
+    z-index:1;
+    @include transition(all 0.3s ease);
+
+    &.open
+    {
+        left: -435px;
+        -moz-box-shadow: 10px 0px 40px 0px #2c2c2c;
+        -webkit-box-shadow: 10px 0px 40px 0px #2c2c2c;
+        -o-box-shadow: 10px 0px 40px 0px #2c2c2c;
+        box-shadow: 10px 0px 40px 0px #2c2c2c;
+        filter:progid:DXImageTransform.Microsoft.Shadow(color=#2c2c2c, Direction=90, Strength=40);
+    }
+}
+
+.content
+{
+	width: 1200px;
+	margin: auto;
+    position: relative;
+
+    @media screen and (max-width: 1250px) {
+        width: 100%;
+    }
+}
+
+.floatLeft
+{
+    float: left;
+}
+
+.floatRight
+{
+    float: right;
+}
+
+p
+{
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+
+a, a:visited
+{
+    color: #fff;
+    text-decoration: none;
+
+    &:hover
+    {
+        color: #e5e5e5;
+    }
+}
+
+.mobileNav
+{
+    width: 435px;
+    height: 100%;
+    background-color: #4a4a4a;
+    font-size: 51px;
+    color: #fff;
+    text-align: right;
+    padding: 20px 60px 0 0;
+    line-height: 80px;
+    @include box-sizing(border-box);
+    position:fixed;
+    top:0;
+    right:0;
+    z-index: 0;
+}
